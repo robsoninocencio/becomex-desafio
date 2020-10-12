@@ -32,7 +32,7 @@ function getCache(key) {
 const setCache = (key, value) => {
   console.log("Salvando no cache");
   cache.set(key, JSON.stringify(value));
-  // redisClient.expire(key, 10);
+  // cache.expire(key, 10);
 };
 
 const getUrlAll = async () => {
